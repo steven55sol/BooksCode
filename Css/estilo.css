@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*    Estableciendo estilo al header   */
+
+.Cont-logo{
+    width: 100%;
+    height: 70px;
+    background: #111;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 1000;
+}
+
+.logo{
+   position: absolute;
+   width: 250px;
+   left: 0;
+   top: 5px;
+}
+
+.main-logo{
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    margin-right: 15px;
+    display: none;
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    cursor: pointer;
+}
+
+.link{
+    display: block;
+    height: 60px;
+    margin-top: 5px;
+    text-align: center;
+    padding: 15px 15px;
+    list-style: none;
+    border-bottom:3px solid orangered;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+    font-family: monospace;
+    outline: none;
+}
+
+.link a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.link:hover{
+    background: #E64A19;
+}
+
+
+
+/*       Estableciendo estilo al banner      */
+
+.banner{
+    position: relative;
+    width: 100%;
+}
+
+.img-banner{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 35px;
+}
+
+.title-banner{
+    position: absolute;
+    width: 60%;
+    text-align: center;
+    color:#fff;
+    -webkit-text-shadow: 5px 5px 5px  #000;
+    -moz-text-shadow: 5px 5px 5px  #000;
+    -o-text-shadow: 5px 5px 5px  #000;
+    text-shadow: 5px 5px 5px  #000;
+    top: 125px;
+    left: 290px;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 20px;
+}
+
+/*       Estilo de el main     */
+
+.cont-main{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.cont-libros_sugeridos{
+    background: #111;
+    padding: 15px 180px;
+    display: table;
+    margin: auto;
+}
+
+.title-libros_sugeridos{
+    color: #fff;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+.libros-sugeridos{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.item{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    background: #111;
+    margin: 5px 10px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+/*          titles              */
+
+.cont-libros{
+    background: #111;
+    padding: 15px 180px;
+    border-radius: 0px 50px 0px 0px;
+    display: table;
+    margin-left: 20px;
+}
+
+.title-libros{
+    color: #fff;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+/*   Estableciendo estilo al footer */
+
+.footer{
+    width: 100%;
+    background: #111;
+    padding: 20px;
+}
+
+.title-footer{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-family: monospace;
+    background: rgba(0,0,0,.5);
+    display: table;
+    margin: auto;
+    padding: 5px 70px;
+}
+
+.title-medias{
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: monospace;
+    padding: 10px;
+}
+
+.icons{
+    display: table;
+    background: rgba(0,0,0,.5);
+    margin: auto;
+    padding: 0px 20px;
+}
+
+
+.icon-media{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Asignando imagenes y sus estilos */
+
+.libros{
+    width: 130px;
+    height: 180px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width:280px){
+    
+    /* Menu responsavi */
+    .menu{
+        margin-top: 69px;
+        display: block;
+        position: absolute;
+        left: 0;
+        transform: translateX(-400px);
+        transition: all .2s;
+        height: 400px;
+        background: #222
+        
+    }
+    .link{
+       background: #222;
+       margin-right: 0px;
+       margin-top: 0;
+    }
+    
+    .main-logo{
+        display:  block;
+        
+    }
+    
+    #check{
+        display: none;
+    }
+    
+    #check:checked ~ .menu{
+        transform: translateX(0px);
+    }
+    
+    /*        banner    */
+    
+    .banner{
+        position: relative;
+    }
+    
+    .img-banner{
+        height: 300px;
+        margin-bottom: 5px;
+    }
+    
+    .title-banner{
+        font-size: 30px;
+        left: 0px;
+        top: 145px;
+        width: 100%;
+        padding: 0;
+    }
+    
+    /*          titulos   */
+    
+    .cont-libros_sugeridos{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .cont-libros{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        margin-left: 0;
+        border-radius: 0;
+    }
+    
+    .cont-main{
+        width: 100%;
+    }
+    
+    .item{
+        margin: 5px auto;
+    }
+    
+}
+@media screen and (min-width:528px){
+    .item{
+        margin: 5px auto
+    }
+}
+@media screen and (min-width:1024px){
+    .menu{
+        transform: translateX(0px);
+        transition: none;
+        display: flex;
+        margin-top: 5px;
+        height: 0;
+        position: relative;
+    }
+    .main-logo{
+        display: none;
+    }
+    .link{
+        margin-right: 5px;
+    }
+    
+    .img-banner{
+        height: 500px;
+    }
+    
+    .title-banner{
+        top: 250px;
+        width: 600px;
+        left: 350px;
+    }
+    .cont-libros{
+    background: #111;
+    padding: 10px 180px;
+    border-radius: 0px 50px 0px 0px;
+    display: table;
+    width: 0;
+}
+
+.title-libros{
+    color: #fff;
+    font-size: 25px;
+    font-family: monospace;
+}
+}

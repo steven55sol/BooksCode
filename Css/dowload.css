@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+}
+
+/* Estilo del header*/
+
+.container-header{
+    width: 100%;
+    padding: 10px;
+    background: #111;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.title-header{
+    position: absolute;
+    color: #fff;
+    top: 16px;
+    left: 10px;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+/* Estilo del button inicio*/
+
+.button-start{
+    padding: 10px 50px;
+    margin-top: 6px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: bold;
+    background: #FF5733;
+    border: none;
+    color: #000;
+}
+
+.title-principal{
+    text-align: center;
+    background: #111;
+    color: white;
+    display: table;
+    margin: 10px auto;
+    padding: 20px 15px; 
+    font-family: monospace;
+}
+
+/*     Container main    */
+
+.container-main{
+    display: flex;
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+.container-number{
+    background: #111;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+    margin-top: 7px;
+}
+.title-articles{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: monospace;
+    width: 300px;
+}
+
+.img-article{
+    width:70%;
+    margin: auto;
+}
+
+.paso1{
+    width: 200px;
+    height: 250px;
+    margin: 10px 0;
+}
+
+.paso2{
+    width: 200px;
+    margin: 15px 0;
+}
+
+.paso3{
+    width: 300px;
+    margin: 25px 0;
+}
+
+.img-article3{
+    width:80%;
+    margin: auto;
+}
+
+/*   Estableciendo estilo al footer */
+
+.footer{
+    width: 100%;
+    background: #111;
+    padding: 20px;
+}
+
+.title-footer{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-family: monospace;
+    background: rgba(0,0,0,.5);
+    display: table;
+    margin: auto;
+    padding: 5px 70px;
+}
+
+.title-medias{
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: monospace;
+    padding: 10px;
+}
+
+.icons{
+    display: table;
+    background: rgba(0,0,0,.5);
+    margin: auto;
+    padding: 0px 20px;
+}
+
+
+.icon-media{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:728px){
+   
+
+    
+    
+}
+
